@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Kidstagram</title>
-    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<title>Practice</title>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -11,22 +10,22 @@
 <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
 <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <script src="mainKidstagram.js"></script>
-          </head>
-  <body>
-    <center>
-      <h1 class="header">Kidstagram  <sup><img src=""></sup></h1>
-      <div class="col-lg-4 col-md-6 col-sm-8 col-xs-12 login_div">
-        <h3> Welcome to Kidstagram</h3>
-        <h4>Join Kidstagram today</h4>
-        <div class="form-group">
-          <label>Username:  </label>
-          <input type="text" id="user_name" class="form-control" placeholder="Username">
-        </div>
-        <button id="login_button" class="btn btn-primary" onclick="ADDUSER()">Login Now</button>
-        <br>
-      </div>
-    </center>
-  </body>
+
+<script src="practice.js"></script>
+</head>
+<body>
+<div class="container">
+	
+	<h1>Practice Activity</h1>
+
+		<div class="form-group">
+		  <label >User Name:</label>
+        <input type="text" id="username" placeholder="enter username" class="form-control">
+		</div>
+
+		<button class="btn btn-success" onclick="ADDUSER()">Add User Name</button>
+
+</div>
+
+</body>
 </html>
