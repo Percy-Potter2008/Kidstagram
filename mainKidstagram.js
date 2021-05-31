@@ -1,7 +1,8 @@
  // Your web app's Firebase configuration
-  var firebaseConfig = {
+ var firebaseConfig = {
     apiKey: "AIzaSyBY-76K3LBT3LEmOUeKkzqou1-4rxB5X2c",
     authDomain: "kidstagram-3a92c.firebaseapp.com",
+    databaseURL: "https://kidstagram-3a92c-default-rtdb.firebaseio.com",
     projectId: "kidstagram-3a92c",
     storageBucket: "kidstagram-3a92c.appspot.com",
     messagingSenderId: "202592612252",
@@ -10,8 +11,8 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   
-function ADDUSER() {
-  user_name= document.getElementById("user_name").value;
+function adduser() {
+  user_name= document.getElementById("username").value;
  firebase.database().ref("/").child(user_name).update({
   purpose : "adding user"
  });
