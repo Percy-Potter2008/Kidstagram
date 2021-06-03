@@ -16,4 +16,6 @@ function adduser() {
  firebase.database().ref("/").child(user_name).update({
   purpose : "adding user"
  });
+ localStorage.setItem("room_name", room name);
+ window.location="index2.html";
 }
