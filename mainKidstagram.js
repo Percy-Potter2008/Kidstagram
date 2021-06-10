@@ -12,10 +12,10 @@
   firebase.initializeApp(firebaseConfig);
   
 function adduser() {
-  user_name= document.getElementById("user_name").value;
- firebase.database().ref("/").child(user_name).update({
+  username= document.getElementById("username").value;
+ firebase.database().ref("/").child(username).update({
   purpose : "adding user"
  });
- localStorage.setItem("user_name", user_name);
+ localStorage.setItem("username", username);
  window.location="index2.html";
 }
