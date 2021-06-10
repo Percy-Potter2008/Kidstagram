@@ -24,16 +24,20 @@
 		<h1 class="header">	
 			Kidstagram
 		</h1>
+		<div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div">
+			<h3> Make your own room </h3>
 		<h3 class="color_white"></h3>
-		<div class="form-group input_div_room_page">
-			<label>#Add Room:</label>
-
-		</div>
-		<button id="add_room" onclick="addroom()" class="btn btn-success" >#Add Room</button>
-		<h3 class="color_white">#TRENDINGROOMS</h3>
-	
-	</center>
+			<div class="form-group input_div_room_page">
+				<label>#Add Room:</label> 
+				<input type="text" id="room_name" class="form-control" placeholder="#Room Name">
+			</div> 
+			<button onclick="addRoom();" class="btn btn-success">#Add Room</button>
+			<h3 class="color_white">#TRENDINGROOMS</h3>
+			<div id="output">
+			</div>
+			</center>
 </div>
-<script src="Kidstagram_room.js"></script>
+<script 
+	src="Kidstagram_room.js"></script>
 </body>
 </html>
